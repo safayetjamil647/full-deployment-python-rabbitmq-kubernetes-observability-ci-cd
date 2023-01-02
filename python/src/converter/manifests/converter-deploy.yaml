@@ -20,7 +20,8 @@ spec:
     spec:
       containers:
         - name: converter
-          image: sweasytech/converter
+          image: workjamil/converter:latest	
+          imagePullPolicy: Never
           envFrom:
             - configMapRef:
                 name: converter-configmap
